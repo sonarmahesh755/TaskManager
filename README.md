@@ -1,13 +1,12 @@
 #TaskManager
+
 it is used to manager Tasks
 Requirements for TaskBuddy Project 📑
 
 Name: TaskBuddy
 Type: Task Management Application
 
-Core Features
-
-Task Input Form
+Core FeaturesTask Input Form
 
 Add tasks with an input field and a submit button.
 
