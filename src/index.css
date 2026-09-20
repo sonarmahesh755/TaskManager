@@ -1,0 +1,320 @@
+/* ==============================
+   TASKMAN PAGE
+   ============================== */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f4e9;
+  color: #26332f;
+}
+
+
+/* ==============================
+   MAIN CARD
+   ============================== */
+
+.app {
+  width: 440px;
+  margin: 50px auto;
+  padding: 30px 35px;
+  box-sizing: border-box;
+
+  background: #fffef8;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ==============================
+   HEADING
+   ============================== */
+
+h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #172c29;
+  font-weight: 700;
+}
+
+p {
+  margin-top: 6px;
+  margin-bottom: 24px;
+
+  color: #777d7a;
+  font-size: 13px;
+}
+
+
+/* ==============================
+   INPUT
+   ============================== */
+
+input {
+  width: 75%;
+  padding: 9px 10px;
+  box-sizing: border-box;
+
+  border: 1px solid #deded8;
+  border-radius: 5px;
+
+  font-size: 12px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #17695e;
+}
+
+
+/* ==============================
+   SELECT BOXES
+   ============================== */
+
+select {
+  width: 49%;
+  padding: 8px 10px;
+  margin-top: 6px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #deded8;
+  border-radius: 5px;
+
+  background: white;
+  color: #555;
+
+  font-size: 12px;
+}
+
+
+/* ==============================
+   ALL BUTTONS
+   ============================== */
+
+button {
+  padding: 9px 13px;
+
+  border: none;
+  border-radius: 5px;
+
+  background: #17695e;
+  color: white;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+
+/* ==============================
+   ADD TASK BUTTON
+   ============================== */
+
+button[type="submit"] {
+  background: #17695e;
+}
+
+
+/* ==============================
+   TASK LIST
+   ============================== */
+
+.task-list {
+  list-style: none;
+
+  padding: 0;
+  margin: 20px 0 18px;
+}
+
+
+/* ==============================
+   TASK CARD
+   ============================== */
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 45px;
+
+  padding: 8px 10px;
+  margin-bottom: 7px;
+
+  box-sizing: border-box;
+
+  background: #fffef8;
+
+  border: 1px solid #e2dfd4;
+  border-radius: 7px;
+
+  font-size: 11px;
+}
+
+
+/* Task text area */
+
+.task-list li > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+
+/* Task name */
+
+.task-list li span {
+  font-size: 11px;
+}
+
+
+/* Priority/category */
+
+.task-list li small {
+  font-size: 8px;
+  color: #777;
+}
+
+
+/* ==============================
+   TASK BUTTON AREA
+   ============================== */
+
+.task-list li > div:last-child {
+  display: flex;
+  gap: 6px;
+}
+
+
+/* Complete / Undo */
+
+.task-list li button:first-child {
+  background: #dceee7;
+  color: #17695e;
+
+  padding: 6px 9px;
+
+  font-size: 9px;
+}
+
+
+/* ==============================
+   DELETE BUTTON
+   ============================== */
+
+.delete-btn {
+  background: #f9ddd0;
+  color: #df6d4f;
+
+  padding: 6px 9px;
+
+  font-size: 9px;
+}
+
+.delete-btn:hover {
+  background: #f3c8b8;
+}
+
+
+/* ==============================
+   PROGRESS TRACKER
+   ============================== */
+
+.progress-tracker {
+  margin-top: 15px;
+  text-align: center;
+
+  color: #777;
+  font-size: 10px;
+}
+
+
+/* ==============================
+   PROGRESS BAR
+   ============================== */
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+
+  margin-top: 8px;
+
+  background: #e5e4dc;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+
+/* Green progress */
+
+.progress {
+  height: 100%;
+
+  background: #17695e;
+
+  border-radius: 10px;
+
+  transition: width 0.4s ease;
+}
+
+
+/* ==============================
+   CLEAR ALL TASKS
+   ============================== */
+
+.clear-btn {
+  display: block;
+
+  margin: 15px auto 0;
+
+  padding: 7px 13px;
+
+  background: white;
+
+  color: #df6d4f;
+
+  border: 1px solid #f0b9a6;
+
+  border-radius: 5px;
+
+  font-size: 9px;
+}
+
+.clear-btn:hover {
+  background: #fff1eb;
+}
+
+
+/* ==============================
+   MOBILE
+   ============================== */
+
+@media (max-width: 600px) {
+
+  .app {
+    width: calc(100% - 30px);
+    margin: 20px auto;
+    padding: 25px;
+  }
+
+  input {
+    width: 70%;
+  }
+
+  select {
+    width: 49%;
+  }
+
+}
